@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+    <style>
+        .button-section {
+            border: 1px solid green;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+        #btn1 {
+            color: white;
+            background-color: orange;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #btn1:hover {
+            background-color: rgb(243, 185, 77);
+        }
+        #btn2 {
+            color: white;
+            background-color: blue;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #btn1:hover {
+            background-color: rgb(105, 105, 230);
+        }
+        #btn3 {
+            color: white;
+            background-color: green;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #btn3:hover {
+            background-color: rgb(99, 231, 99);
+        }
+
+        .display-section {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .profession, .user-data {
+            border: 1px solid gray;
+            margin-top: 5px;
+        }
+        .user-data {
+            border: 1px solid gray;
+            margin-top: 5px;
+        }
+        .profession h4, .user-data h4 {
+            border: 1px solid gray;
+            text-align: center;
+            margin-top: 0;
+            padding: 7px;
+            background-color: gray;
+            color: white;
+        }
+        .user-data h4 {
+            border: 1px solid gray;
+            text-align: center;
+            margin-top: 0;
+            padding: 7px;
+            background-color: gray;
+            color: white;
+        }
+       
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="button-section">
+            <button id="btn1">Get Text</button>
+            <button id="btn2">Get User</button>
+            <button id="btn3">Get Users</button>
+        </div>
+
+       <div class="display-section">
+            <div class="profession">
+                <h4>User Profession</h4>
+                <div class="display-text" id="text-display">
+                    
+                </div>
+            </div>
+
+            <div class="user-data">
+                <h4>User Info</h4>
+                <div class="display-user" id="user-display">
+
+                </div>
+            </div>
+
+            <div>
+                <div class="display-users" id="users-display">
+
+                </div>
+           </div>
+       </div>
+
+
+    </div>
+
+
+    <script src="/scripts/main.js"></script>
+</body>
+</html>
