@@ -10,7 +10,14 @@ const getPost = () => {
             outPut += `<li>${post.title}</li>`
         })
         document.body.innerHTML = outPut;
+    },1000)
+}
+
+const creatPost = (post) => {
+    setTimeout(() => {
+        posts.push(post)
     },2000)
 }
 
 getPost()
+creatPost({title: "post three", body: "this is post three"})
