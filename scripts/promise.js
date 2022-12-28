@@ -8,16 +8,20 @@ const getPost = () => {
         let outPut = '';
         posts.forEach((post) => {
             console.log(post.title)
-        })
-    },1000)
+            outPut += `<li>${post.body}</li>`
+        });
+        document.body.innerHTML = outPut;
+    },1000);
+
 }
 
-const creatPost = (post) => {
+const creatPost = (post, cb) => {
     setTimeout(() => {
         let result = posts.push(post)
         console.log(post.title)
+        cb()
     },2000)
 }
 
-getPost()
-creatPost({title: 'post three', body: 'this is post three'})
+
+creatPost({title: 'post three', body: 'this is post three'}, getPost)
