@@ -13,11 +13,12 @@ const getPost = () => {
     },1000)
 }
 
-const creatPost = (post) => {
+const creatPost = (post, cb) => {
     setTimeout(() => {
         posts.push(post)
+        cb()
     },2000)
 }
 
-getPost()
-creatPost({title: "post three", body: "this is post three"})
+
+creatPost({title: "post three", body: "this is post three"}, getPost)
