@@ -20,7 +20,7 @@ const creatPost = (post, cb) => {
         let result = posts.push(post)
         console.log(post.title)
         cb()
-    },2000)
+    },3000)
 }
 
 
