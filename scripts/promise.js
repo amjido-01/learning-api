@@ -12,4 +12,12 @@ const getPost = () => {
     },1000)
 }
 
+const creatPost = (post) => {
+    setTimeout(() => {
+        let result = posts.push(post)
+        console.log(post.title)
+    },2000)
+}
+
 getPost()
+creatPost({title: 'post three', body: 'this is post three'})
