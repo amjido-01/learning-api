@@ -5,20 +5,11 @@ const posts = [
 
 const getPost = () => {
     setTimeout(() => {
-        let outPut = ''
+        let outPut = '';
         posts.forEach((post) => {
-            outPut += `<li>${post.title}</li>`
+            console.log(post.title)
         })
-        document.body.innerHTML = outPut;
     },1000)
 }
 
-const creatPost = (post, cb) => {
-    setTimeout(() => {
-        posts.push(post)
-        cb()
-    },2000)
-}
-
-
-creatPost({title: "post three", body: "this is post three"}, getPost)
+getPost()
