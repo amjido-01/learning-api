@@ -15,11 +15,11 @@ const returnPromise = () => {
     })
 }
 
-const creatPost = async (post, cb) => {
-   setTimeout(() => {
+const creatPost =  (post, cb) => {
+    const timing = async setTimeout(() => {
         posts.push(post);
-        cb();
-    },3000)
+        await cb()
+    }, 3000)
 }
 
 creatPost({title: "post three", body: "this is post three"}, returnPromise)
