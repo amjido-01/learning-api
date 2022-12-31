@@ -8,10 +8,10 @@ const getPost = () => {
     setTimeout(() => {
         let outPut = '';
         posts.forEach((post) => {
-           outPut += post
+           outPut += post.title
+           listItems.innerHTML = outPut
         });
         // document.body.innerHTML = outPut;
-        listItems.append(outPut)
 
     },1000);
 
