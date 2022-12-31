@@ -9,10 +9,9 @@ const getPost = () => {
         let outPut = '';
         posts.forEach((post) => {
            outPut += post.title
-           listItems.innerHTML = outPut
         });
-        // document.body.innerHTML = outPut;
-
+        listItems += outPut
+        console.log(listItems)
     },1000);
 
 }
