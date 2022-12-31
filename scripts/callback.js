@@ -1,3 +1,4 @@
+let listItems = document.getElementById("listitems")
 const posts = [
     {title: "post one", body: "this is post one"},
     {title: "post two", body: "this is post two"},
@@ -7,9 +8,11 @@ const getPost = () => {
     setTimeout(() => {
         let outPut = '';
         posts.forEach((post) => {
-            outPut += `<li>${post.body}</li>`
+           outPut += post
         });
-        document.body.innerHTML = outPut;
+        // document.body.innerHTML = outPut;
+        listItems.append(outPut)
+
     },1000);
 
 }
